@@ -1,0 +1,283 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mhd anik, own, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\anik1\Documents\CSE_31\Micro_Controller\ASSIGNMENT01\practicing keil\blinkingLate.uvprojx
+Project File Date:  02/08/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(3): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+main.c(5): warning: In file included from...
+./USART.h(49): warning: // comments are not allowed in this language [-Wcomment]
+// USART 2 Configuration
+^
+main.c(21): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < n; i++) {
+         ^
+main.c(21): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(22): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      gpio.Pin = arr[i];
+               ~ ^~~~~~
+main.c(27): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < n; i++) {
+         ^
+main.c(27): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(28): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      gpio.Pin = arr[i];
+               ~ ^~~~~~
+main.c(33): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i <= 15; i++) {
+         ^
+main.c(33): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(34): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      gpio.Pin = i;
+               ~ ^
+main.c(13): warning: no previous prototype for function 'GPIO_Config' [-Wmissing-prototypes]
+void GPIO_Config(int arr[], int n, int flag) {
+     ^
+main.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_Config(int arr[], int n, int flag) {
+^
+static 
+main.c(46): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    GPIO_WritePin(GPIOB, arr1[trans - 1], GPIO_PIN_RESET);
+    ~~~~~~~~~~~~~        ^~~~~~~~~~~~~~~
+main.c(47): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < 6; i++) {
+         ^
+main.c(47): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(49): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(51): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(56): warning: // comments are not allowed in this language [-Wcomment]
+  //For D2
+  ^
+main.c(58): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    GPIO_WritePin(GPIOA, arr[set - 1], GPIO_PIN_RESET);
+    ~~~~~~~~~~~~~        ^~~~~~~~~~~~
+main.c(59): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < 6; i++) {
+         ^
+main.c(59): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(61): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(63): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(44): warning: no previous prototype for function 'transitionTraffic' [-Wmissing-prototypes]
+void transitionTraffic(int arr[], int set, int trans, int arr1[], int flag) {
+     ^
+main.c(44): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void transitionTraffic(int arr[], int set, int trans, int arr1[], int flag) {
+^
+static 
+main.c(78): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < 3; i++) {
+         ^
+main.c(78): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(80): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(87): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(95): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(98): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(103): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < 3; i++) {
+         ^
+main.c(103): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(106): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(113): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(119): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(120): warning: implicit declaration of function 'GPIO_ReadPin' [-Wimplicit-function-declaration]
+        D1Red = GPIO_ReadPin(GPIOC, 12);
+                ^
+main.c(125): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(131): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = 0; i < 3; i++) {
+         ^
+main.c(131): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(134): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(135): warning: implicit declaration of function 'GPIO_ReadPin' [-Wimplicit-function-declaration]
+        D1Red = GPIO_ReadPin(GPIOC, 10);
+                ^
+main.c(140): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(146): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(148): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr1[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~~
+main.c(74): warning: no previous prototype for function 'dir' [-Wmissing-prototypes]
+void dir(int arr[], int set, int d1, int arr1[])
+     ^
+main.c(74): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void dir(int arr[], int set, int d1, int arr1[])
+^
+static 
+main.c(160): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = actual; i <= end; i++) {
+         ^
+main.c(160): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(162): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(164): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOA, arr[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(168): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int i = actual; i <= end; i++) {
+         ^
+main.c(168): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(170): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr[i], GPIO_PIN_SET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(172): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        GPIO_WritePin(GPIOB, arr[i], GPIO_PIN_RESET);
+        ~~~~~~~~~~~~~        ^~~~~~
+main.c(158): warning: no previous prototype for function 'trafficSituation' [-Wmissing-prototypes]
+void trafficSituation(int arr[], int start, int end, int actual, int flag) {
+     ^
+main.c(158): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void trafficSituation(int arr[], int start, int end, int actual, int flag) {
+^
+static 
+main.c(233): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for (int timer = 1; timer <= 240; timer++) {
+         ^
+main.c(233): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(237): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+          for (int i = 0; i < 5; i++) {
+               ^
+main.c(237): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(238): warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+            r2 = 1 + rand() % 3;
+                     ^
+main.c(307): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+          for (int i = 0; i < 5; i++) {
+               ^
+main.c(307): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(308): warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+            r1 = 1 + rand() % 3;
+                     ^
+main.c(368): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(187): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+  int transition[6] = {
+      ^
+main.c(216): warning: unused variable 'r2H' [-Wunused-variable]
+  int r1H, r2H, r3H, r4H;
+           ^
+main.c(216): warning: unused variable 'r1H' [-Wunused-variable]
+  int r1H, r2H, r3H, r4H;
+      ^
+main.c(216): warning: unused variable 'r3H' [-Wunused-variable]
+  int r1H, r2H, r3H, r4H;
+                ^
+main.c(216): warning: unused variable 'r4H' [-Wunused-variable]
+  int r1H, r2H, r3H, r4H;
+                     ^
+main.c(211): warning: unused variable 'dirFlag' [-Wunused-variable]
+  }, transitonFlag = 0, dirFlag = 0; //D2 //GPIOB
+                        ^
+main.c(11): warning: no previous extern declaration for non-static variable 'D1Red' [-Wmissing-variable-declarations]
+int D1Red, D2Red;
+    ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int D1Red, D2Red;
+^
+main.c(11): warning: no previous extern declaration for non-static variable 'D2Red' [-Wmissing-variable-declarations]
+int D1Red, D2Red;
+           ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int D1Red, D2Red;
+^
+71 warnings generated.
+compiling main.c...
+linking...
+.\Objects\blinkingLate.axf: Error: L6218E: Undefined symbol GPIO_ReadPin (referred from main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+".\Objects\blinkingLate.axf" - 1 Error(s), 71 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/anik1/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/anik1/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   MDK/Device/Source/ARM/STM32F446xx_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
