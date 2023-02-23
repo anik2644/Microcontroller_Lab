@@ -1,0 +1,237 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Student\Downloads\21_53_VERYUPdatED\21_53_VERYUPdated\blinky.uvprojx
+Project File Date:  02/15/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(2): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+main.c(5): warning: In file included from...
+./USART.h(49): warning: // comments are not allowed in this language [-Wcomment]
+// USART 2 Configuration
+^
+main.c(12): warning: no previous extern declaration for non-static variable 'period' [-Wmissing-variable-declarations]
+uint32_t period=100000;
+         ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t period=100000;
+^
+main.c(13): warning: no previous extern declaration for non-static variable 'yperiod' [-Wmissing-variable-declarations]
+uint32_t yperiod=290000;
+         ^
+main.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t yperiod=290000;
+^
+main.c(15): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+void delay(uint32_t time){
+     ^
+main.c(15): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay(uint32_t time){
+^
+static 
+main.c(24): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                GPIO_InitTypeDef PA1 = {1, GPIO_MODE_OUTPUT, GPIO_NOPULL, GPIO_SPEED_FREQ_LOW};
+                                 ^
+main.c(20): warning: no previous prototype for function 'GPIO_INT' [-Wmissing-prototypes]
+void GPIO_INT(void){
+     ^
+main.c(20): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_INT(void){
+^
+static 
+main.c(80): warning: // comments are not allowed in this language [-Wcomment]
+                        GPIO_WritePin(GPIOC, 10,  GPIO_PIN_RESET); //SIGNAL-L 
+                                                                   ^
+main.c(77): warning: no previous prototype for function 'Agoing' [-Wmissing-prototypes]
+void Agoing(void){
+     ^
+main.c(77): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Agoing(void){
+^
+static 
+main.c(111): warning: no previous prototype for function 'Bgoing' [-Wmissing-prototypes]
+void Bgoing(void){
+     ^
+main.c(111): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Bgoing(void){
+^
+static 
+main.c(143): warning: no previous prototype for function 'Aturning' [-Wmissing-prototypes]
+void Aturning(void){
+     ^
+main.c(143): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Aturning(void){
+^
+static 
+main.c(186): warning: no previous prototype for function 'Bturning' [-Wmissing-prototypes]
+void Bturning(void){
+     ^
+main.c(186): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Bturning(void){
+^
+static 
+main.c(231): warning: no previous prototype for function 'AstopFULL' [-Wmissing-prototypes]
+void AstopFULL(void){
+     ^
+main.c(231): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void AstopFULL(void){
+^
+static 
+main.c(248): warning: no previous prototype for function 'AstopMID' [-Wmissing-prototypes]
+void AstopMID(void){
+     ^
+main.c(248): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void AstopMID(void){
+^
+static 
+main.c(262): warning: no previous prototype for function 'Aclear' [-Wmissing-prototypes]
+void Aclear(void){
+     ^
+main.c(262): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Aclear(void){
+^
+static 
+main.c(276): warning: no previous prototype for function 'BstopFULL' [-Wmissing-prototypes]
+void BstopFULL(void){
+     ^
+main.c(276): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void BstopFULL(void){
+^
+static 
+main.c(293): warning: no previous prototype for function 'BstopMID' [-Wmissing-prototypes]
+void BstopMID(void){
+     ^
+main.c(293): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void BstopMID(void){
+^
+static 
+main.c(309): warning: no previous prototype for function 'Bclear' [-Wmissing-prototypes]
+void Bclear(void){
+     ^
+main.c(309): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Bclear(void){
+^
+static 
+main.c(365): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int a=0;a<15;a++){
+                                                    ^
+main.c(365): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(370): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int n=0;n<5;n++){
+                                                    ^
+main.c(370): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(373): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int x=0;x<10;x++){
+                                                    ^
+main.c(373): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(378): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int y=0;y<3;y++){
+                                                    ^
+main.c(378): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(384): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int a=0;a<10;a++){
+                                                    ^
+main.c(384): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(389): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                        for(int n=0;n<3;n++){
+                                            ^
+main.c(389): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(392): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                        for(int x=0;x<15;x++){
+                                            ^
+main.c(392): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(397): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                        for(int y=0;y<5;y++){
+                                            ^
+main.c(397): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(355): warning: variable 'l' set but not used [-Wunused-but-set-variable]
+                        int l,r,f,b;
+                            ^
+main.c(355): warning: variable 'r' set but not used [-Wunused-but-set-variable]
+                        int l,r,f,b;
+                              ^
+main.c(355): warning: variable 'f' set but not used [-Wunused-but-set-variable]
+                        int l,r,f,b;
+                                ^
+main.c(355): warning: variable 'b' set but not used [-Wunused-but-set-variable]
+                        int l,r,f,b;
+                                  ^
+main.c(344): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                int btn1Pressed = 0;
+                    ^
+main.c(347): warning: unused variable 'L' [-Wunused-variable]
+                int L,R,F,B;
+                    ^
+main.c(347): warning: unused variable 'B' [-Wunused-variable]
+                int L,R,F,B;
+                          ^
+main.c(347): warning: unused variable 'F' [-Wunused-variable]
+                int L,R,F,B;
+                        ^
+main.c(347): warning: unused variable 'R' [-Wunused-variable]
+                int L,R,F,B;
+                      ^
+43 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=3392 RO-data=484 RW-data=8 ZI-data=1864  
+".\Objects\blinky.axf" - 0 Error(s), 43 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Student/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Student/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F446xx_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
