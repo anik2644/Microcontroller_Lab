@@ -1,0 +1,242 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Atikur Rahman, System, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+H:\3rdYear1stSemester\microcontroller\testTraffic.uvprojx
+Project File Date:  02/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+tr.c(1): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+tr.c(4): warning: In file included from...
+./USART.h(49): warning: // comments are not allowed in this language [-Wcomment]
+// USART 2 Configuration
+^
+tr.c(7): warning: no previous prototype for function 'GPIO_config' [-Wmissing-prototypes]
+void GPIO_config(void)
+     ^
+tr.c(7): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_config(void)
+^
+static 
+tr.c(24): warning: no previous prototype for function 'GPIOB_config' [-Wmissing-prototypes]
+void GPIOB_config(void)
+     ^
+tr.c(24): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIOB_config(void)
+^
+static 
+4 warnings generated.
+compiling tr.c...
+SYS_INIT.c(36): warning: // comments are not allowed in this language [-Wcomment]
+// Systick ISR executes every milli-second
+^
+1 warning generated.
+compiling SYS_INIT.c...
+assembling startup_stm32f446xx.s...
+GPIO.c(32): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+GPIO.c(34): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void GPIO_WritePin(GPIO_TypeDef *GPIOx,uint16_t GPIO_pin,GPIO_PinState PinState)
+                                 ^
+GPIO.c(34): warning: unused parameter 'GPIO_pin' [-Wunused-parameter]
+void GPIO_WritePin(GPIO_TypeDef *GPIOx,uint16_t GPIO_pin,GPIO_PinState PinState)
+                                                ^
+GPIO.c(34): warning: unused parameter 'PinState' [-Wunused-parameter]
+void GPIO_WritePin(GPIO_TypeDef *GPIOx,uint16_t GPIO_pin,GPIO_PinState PinState)
+                                                                       ^
+GPIO.c(43): warning: // comments are not allowed in this language [-Wcomment]
+// You need to implement this function  
+^
+GPIO.c(41): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void GPIO_Init(GPIO_TypeDef* GPIOx,GPIO_InitTypeDef *GPIO_Init)
+                             ^
+GPIO.c(41): warning: unused parameter 'GPIO_Init' [-Wunused-parameter]
+void GPIO_Init(GPIO_TypeDef* GPIOx,GPIO_InitTypeDef *GPIO_Init)
+                                                     ^
+7 warnings generated.
+compiling GPIO.c...
+USART.c(31): warning: In file included from...
+./USART.h(49): warning: // comments are not allowed in this language [-Wcomment]
+// USART 2 Configuration
+^
+USART.c(34): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+USART.c(47): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+        for(uint8_t i=0;i<size;i++){
+            ^
+USART.c(47): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+USART.c(58): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+        for(uint8_t i=0;i<size;i++){
+            ^
+USART.c(58): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+USART.c(76): warning: // comments are not allowed in this language [-Wcomment]
+// Send a string to the UART PORTx
+^
+7 warnings generated.
+compiling USART.c...
+CLOCK.c(31): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+CLOCK.c(60): warning: // comments are not allowed in this language [-Wcomment]
+RCC->CR |=RCC_CR_HSEON; // set CR bit 16 
+                        ^
+2 warnings generated.
+compiling CLOCK.c...
+main.c(1): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+main.c(4): warning: In file included from...
+./USART.h(49): warning: // comments are not allowed in this language [-Wcomment]
+// USART 2 Configuration
+^
+main.c(6): warning: no previous prototype for function 'GPIO_config' [-Wmissing-prototypes]
+void GPIO_config(void)
+     ^
+main.c(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_config(void)
+^
+static 
+main.c(23): warning: no previous prototype for function 'GPIOB_config' [-Wmissing-prototypes]
+void GPIOB_config(void)
+     ^
+main.c(23): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIOB_config(void)
+^
+static 
+main.c(70): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                for(int i=0;i<5;i++)
+                                    ^
+main.c(70): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(72): warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+                                        d1R1timer=1+rand()%3;
+                                                    ^
+main.c(79): warning: // comments are not allowed in this language [-Wcomment]
+                                //Cheking the traffic situation for r2 and r4
+                                ^
+main.c(83): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+                                        extraDelayD2=12.5*1000;
+                                                    ~~~~~^~~~~
+main.c(103): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(107): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(extraDelayD1);
+                                ~~~~~~~~ ^~~~~~~~~~~~
+main.c(132): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(142): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                for(int i=0;i<5;i++)
+                                    ^
+main.c(142): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(144): warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+                                        d1R1timer=1+rand()%3;
+                                                    ^
+main.c(155): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+                                        extraDelayD1=12.5*1000;
+                                                    ~~~~~^~~~~
+main.c(174): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(179): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(extraDelayD2);
+                                ~~~~~~~~ ^~~~~~~~~~~~
+main.c(202): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(59): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                int setTimer=0,extraDelayD1=0,extraDelayD2=0;
+                    ^
+main.c(209): warning: no newline at end of file [-Wnewline-eof]
+        }
+         ^
+main.c(52): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        int timer=0,count=0,d1R1timer=0,d1R3timer=0,d2R2timer=0,d2R4timer;
+            ^
+main.c(52): warning: unused variable 'count' [-Wunused-variable]
+        int timer=0,count=0,d1R1timer=0,d1R3timer=0,d2R2timer=0,d2R4timer;
+                    ^
+main.c(81): warning: variable 'd2R4timer' may be uninitialized when used here [-Wconditional-uninitialized]
+                                if(d2R2timer==3||d2R4timer==3)
+                                                 ^~~~~~~~~
+main.c(52): note: initialize the variable 'd2R4timer' to silence this warning
+        int timer=0,count=0,d1R1timer=0,d1R3timer=0,d2R2timer=0,d2R4timer;
+                                                                         ^
+                                                                          = 0
+24 warnings generated.
+compiling main.c...
+compiling system_stm32f4xx.c...
+linking...
+.\Objects\testTraffic.axf: Error: L6200E: Symbol GPIOB_config multiply defined (by tr.o and main.o).
+.\Objects\testTraffic.axf: Error: L6200E: Symbol GPIO_config multiply defined (by tr.o and main.o).
+.\Objects\testTraffic.axf: Error: L6200E: Symbol main multiply defined (by tr.o and main.o).
+.\Objects\testTraffic.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by tr.o and main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+".\Objects\testTraffic.axf" - 4 Error(s), 45 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/atik1309/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/atik1309/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F446xx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

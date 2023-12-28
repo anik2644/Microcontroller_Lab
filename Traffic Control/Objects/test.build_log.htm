@@ -1,0 +1,164 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Atikur Rahman, System, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+H:\3rdYear1stSemester\microcontroller\test.uvprojx
+Project File Date:  02/06/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+./CLOCK.h(39): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_P 0 //0 to the sixteenth position (PLL=2)
+                ^
+main.c(4): warning: In file included from...
+./USART.h(49): warning: // comments are not allowed in this language [-Wcomment]
+// USART 2 Configuration
+^
+main.c(6): warning: no previous prototype for function 'GPIO_config' [-Wmissing-prototypes]
+void GPIO_config(void)
+     ^
+main.c(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_config(void)
+^
+static 
+main.c(23): warning: no previous prototype for function 'GPIOB_config' [-Wmissing-prototypes]
+void GPIOB_config(void)
+     ^
+main.c(23): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIOB_config(void)
+^
+static 
+main.c(45): warning: no previous prototype for function 'closingTrafficSituationD2' [-Wmissing-prototypes]
+void closingTrafficSituationD2(void)
+     ^
+main.c(45): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void closingTrafficSituationD2(void)
+^
+static 
+main.c(55): warning: no previous prototype for function 'closingTrafficSituationD1' [-Wmissing-prototypes]
+void closingTrafficSituationD1(void)
+     ^
+main.c(55): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void closingTrafficSituationD1(void)
+^
+static 
+main.c(92): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                for(int i=0;i<5;i++)
+                                    ^
+main.c(92): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(94): warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+                                        d1R1timer=1+rand()%3;
+                                                    ^
+main.c(137): warning: // comments are not allowed in this language [-Wcomment]
+                                //Cheking the traffic situation for r2 and r4
+                                ^
+main.c(141): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+                                        extraDelayD2=12.5*1000;
+                                                    ~~~~~^~~~~
+main.c(180): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(185): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(extraDelayD1);
+                                ~~~~~~~~ ^~~~~~~~~~~~
+main.c(210): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(221): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                for(int i=0;i<5;i++)
+                                    ^
+main.c(221): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(223): warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+                                        d1R1timer=1+rand()%3;
+                                                    ^
+main.c(275): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+                                        extraDelayD1=12.5*1000;
+                                                    ~~~~~^~~~~
+main.c(294): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(299): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(extraDelayD2);
+                                ~~~~~~~~ ^~~~~~~~~~~~
+main.c(322): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                ms_delay(setTimer);
+                                ~~~~~~~~ ^~~~~~~~
+main.c(81): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                int setTimer=0,extraDelayD1=0,extraDelayD2=0;
+                    ^
+main.c(329): warning: no newline at end of file [-Wnewline-eof]
+        }
+         ^
+main.c(74): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        int timer=0,count=0,d1R1timer=0,d1R3timer=0,d2R2timer=0,d2R4timer;
+            ^
+main.c(74): warning: unused variable 'count' [-Wunused-variable]
+        int timer=0,count=0,d1R1timer=0,d1R3timer=0,d2R2timer=0,d2R4timer;
+                    ^
+main.c(118): warning: variable 'd2R4timer' may be uninitialized when used here [-Wconditional-uninitialized]
+                                if(d2R4timer==3)
+                                   ^~~~~~~~~
+main.c(74): note: initialize the variable 'd2R4timer' to silence this warning
+        int timer=0,count=0,d1R1timer=0,d1R3timer=0,d2R2timer=0,d2R4timer;
+                                                                         ^
+                                                                          = 0
+26 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=2836 RO-data=468 RW-data=0 ZI-data=1864  
+".\Objects\test.axf" - 0 Error(s), 26 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/atik1309/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/atik1309/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F446xx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

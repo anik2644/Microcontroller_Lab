@@ -1,0 +1,40 @@
+#include "stm32f4xx.h"
+void configGPIO(void);
+int main()
+{
+	configGPIO();
+	while(1)
+	{
+		if(((GPIOA -> IDR >> 1) & 1) == 1)
+		{
+			GPIOA -> ODR |= (1 << 5);
+
+		}
+		else
+		{
+			
+			GPIOA -> ODR = 0;
+		}
+	}
+}
+void configGPIO(void)
+{
+	RCC -> AHB1ENR |= 1;
+	GPIOA -> MODER |= (1 << 8);
+	GPIOA -> MODER |= (1 << 10);
+	GPIOA -> OSPEEDR |= (1 << 2) | (1 << 4) | (1 << 5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
